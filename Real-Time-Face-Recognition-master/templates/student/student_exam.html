@@ -1,0 +1,74 @@
+{% extends 'student/studentbase.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+<br><br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" style="background-color:#588c7e;">
+      <h6 class="panel-title">Courses</h6>
+    </div>
+    <table class="table table-hover" id="dev-table" style="color: #1a1a1a; background-color: #f2f2f2;">
+      <thead>
+        <tr>
+
+          <th>Exam Name</th>
+          
+          <th>Take Exam</th>
+        </tr>
+      </thead>
+      {% for t in courses %}
+      <tr>
+
+        <td> {{t.course_name}}</td>
+        
+        <td><a class="btn btn-danger btn-xs" href="{% url 'take-exam' t.id  %}"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock content %}

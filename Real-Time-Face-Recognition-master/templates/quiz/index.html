@@ -1,0 +1,148 @@
+<!--<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+body{
+
+}
+  .front{
+background-image: url("static/image/green.png")
+  /* Full height */
+  height: 5000%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
+</style>
+<body>
+{% include "quiz/navbar.html" %}
+<br>
+
+
+
+
+    <div class="front">
+
+      <div class="container text-center" style="color: grey;" >
+
+        <h1 class="display-1 text-info">Let's Take Exam </h1>
+        <p class="display-4 d-none d-sm-block">Test your skills and become a master.</p>
+        <p class="lead">We organize Exam on various topics.</p>
+
+
+
+        <p class="lead">Sign up if you haven't already and get access to millions of Exam on the topic of your interest.</p>
+        <p><strong style="color:#40ff00"> Start Your Journey Here:</strong></p>
+        <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+
+        <br><br><br>
+      </div>
+    </div>
+
+  </section>
+
+
+  </br>
+</div>
+{% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
+-->
+<!doctype html>
+{% load static %}
+{% load bootstrap4 %}
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>www.online exam system</title>
+</head>
+<style>
+
+
+  h1 {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+
+  }
+  a {
+    font-family: 'Teko', sans-serif;
+    color: #4db1bc;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+
+
+}
+  </style>
+<body>
+{% include "quiz/navbar.html" %}
+<br>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="static/image/img2.jpg" height="850" width="800" alt="First slide">
+
+      <div class="carousel-caption d-none d-md-block">
+
+        <h1 class="display-1 text-info" style="font-size: 6rem;">Let's Take Exam <br> Online</h1>
+        <p class="display-4 d-none d-sm-block">Test your skills and become a master.</p>
+        <p class="lead"style="font-size:24px;">We organize Exam on various topics.</p>
+        <p class="lead" style="font-size:24px;">Sign up if you haven't already and get access to millions of Exam on the topic of your interest.</p>
+        <h4><strong style="color:white"> Start Your Journey Here:</strong></h4>
+        <a href="/student/studentsignup" class="btn btn-lg btn-info" ><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+
+        <br><br><br>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+</div>
+
+
+{% include "quiz/footer.html" %}
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

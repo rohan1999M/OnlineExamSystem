@@ -1,0 +1,105 @@
+<!--<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello, Teacher</h1>
+    <p class="lead">Welcome to Online Quiz</p>
+    <hr class="my-4">
+    <p>You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="teachersignup" role="button">Create Your Account</a>
+      <a class="btn btn-primary btn-lg" href="teacherlogin" role="button">Login</a>
+    </p>
+    <br><br><br><br>
+  </div>
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
+-->
+<!doctype html>
+{% load static %}
+{% load bootstrap4 %}
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>www.online exam system</title>
+</head>
+<style>
+
+.p{
+font-size: 30rem;
+color: gray;
+}
+
+
+</style>
+<body>
+{% include "quiz/navbar.html" %}
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static "image/img5.jpg" %}" height="700" width="700" alt="First slide">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1" style="color: white;">Hello, Teacher </h1>
+
+          <p class="lead" style="color: gray;" ><b>Welcome to Online Exam System<b></b></p>
+          <hr class="my-4">
+          <p style="color: gray;">You can access various features after Login.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="teachersignup" role="button">Create Your Account</a>
+            <a class="btn btn-primary btn-lg" href="teacherlogin" role="button">Login</a>
+          </p>
+          <br><br><br><br><br><br>
+
+          <br><br><br>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+{% include "quiz/footer.html" %}
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
